@@ -25,30 +25,30 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build numpy-typing-compat-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_numpy_cap1.23numpy_min1.22python_min3.9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.23numpy_min1.22python_min3.9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap1.23numpy_min1.22python_min3.9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.23numpy_min1.22python_min3.9"
-[tasks."build-linux_64_numpy_cap1.25numpy_min1.23python_min3.9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.25numpy_min1.23python_min3.9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap1.25numpy_min1.23python_min3.9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.25numpy_min1.23python_min3.9"
-[tasks."build-linux_64_numpy_cap2.0numpy_min1.25python_min3.9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.0numpy_min1.25python_min3.9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.0numpy_min1.25python_min3.9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.0numpy_min1.25python_min3.9"
-[tasks."build-linux_64_numpy_cap2.1numpy_min2.0python_min3.9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.1numpy_min2.0python_min3.9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.1numpy_min2.0python_min3.9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.1numpy_min2.0python_min3.9"
+[tasks."build-linux_64_numpy_cap1.23numpy_min1.22python_min3.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.10.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.23numpy_min1.22python_min3.10 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap1.23numpy_min1.22python_min3.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.10.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.23numpy_min1.22python_min3.10"
+[tasks."build-linux_64_numpy_cap1.25numpy_min1.23python_min3.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.10.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.25numpy_min1.23python_min3.10 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap1.25numpy_min1.23python_min3.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.10.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.25numpy_min1.23python_min3.10"
+[tasks."build-linux_64_numpy_cap2.0numpy_min1.25python_min3.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.10.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.0numpy_min1.25python_min3.10 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.0numpy_min1.25python_min3.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.10.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.0numpy_min1.25python_min3.10"
+[tasks."build-linux_64_numpy_cap2.1numpy_min2.0python_min3.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.10.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.1numpy_min2.0python_min3.10 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.1numpy_min2.0python_min3.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.10.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.1numpy_min2.0python_min3.10"
 [tasks."build-linux_64_numpy_cap2.2numpy_min2.1python_min3.10"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.2numpy_min2.1python_min3.10.yaml"
 description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.2numpy_min2.1python_min3.10 directly (without setup scripts)"

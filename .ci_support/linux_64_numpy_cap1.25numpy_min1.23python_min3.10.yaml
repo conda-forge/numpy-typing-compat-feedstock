@@ -11,7 +11,7 @@ numpy_cap:
 numpy_min:
 - '1.23'
 python_min:
-- '3.9'
+- '3.10'
 zip_keys:
 - - numpy_min
   - numpy_cap
