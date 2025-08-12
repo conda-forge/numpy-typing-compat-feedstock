@@ -1,5 +1,4 @@
 context:
-  python_min: 3.11
   pkg_version: ${{ numpy_min }}.${{ ntc_version }}
   source_url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ pkg_version }}.tar.gz
 
