@@ -1,11 +1,12 @@
 context:
   python_min: 3.11
-  source_url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ numpy_min }}.${{ ntc_version }}.tar.gz
+  pkg_version: ${{ numpy_min }}.${{ ntc_version }}
+  source_url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ pkg_version }}.tar.gz
 
 package:
   name: numpy-typing-compat
   # e.g. '1.22.20250730' for numpy >=1.22,<1.23, numpy-typing-compat version 20250730
-  version: ${{ numpy_min }}.${{ ntc_version }}
+  version: ${{ pkg_version }}
 
 source:
   - if: numpy_min == "2.3"
@@ -51,12 +52,12 @@ requirements:
     - python >=${{ python_min }}
     - numpy <${{ numpy_cap }},>=${{ numpy_min }}
 
-# tests:
-#   - python:
-#       imports:
-#         - numpy_typing_compat
-#       pip_check: true
-#       python_version: ${{ python_min }}.*
+tests:
+  - python:
+      imports:
+        - numpy_typing_compat
+      pip_check: true
+      python_version: ${{ python_min }}.*
 
 about:
   homepage: https://github.com/jorenham/numpy-typing-compat
