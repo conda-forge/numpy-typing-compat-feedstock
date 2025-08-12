@@ -9,11 +9,12 @@ docker_image:
 ntc_version:
 - 20250730
 numpy_cap:
-- '2.0'
+- '2.2'
 numpy_min:
-- '1.25'
+- '2.1'
 python_min:
-- '3.9'
+- '3.10'
 zip_keys:
 - - numpy_min
   - numpy_cap
+  - python_min

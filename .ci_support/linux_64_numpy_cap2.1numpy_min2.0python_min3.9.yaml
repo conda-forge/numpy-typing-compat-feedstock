@@ -17,3 +17,4 @@ python_min:
 zip_keys:
 - - numpy_min
   - numpy_cap
+  - python_min
