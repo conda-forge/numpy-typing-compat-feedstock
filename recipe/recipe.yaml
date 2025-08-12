@@ -1,5 +1,6 @@
 context:
-  pkg_version: ${{ numpy_min }}.${{ ntc_version }}
+  numpy_typing_compat_version: 20250730
+  pkg_version: ${{ numpy_min }}.${{ numpy_typing_compat_version }}
   source_url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ pkg_version }}.tar.gz
 
 package:

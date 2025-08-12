@@ -4,6 +4,3 @@ zip_keys:
 numpy_min:  [ 2.3,  2.2,  2.1, 2.0, 1.25, 1.23, 1.22]
 numpy_cap:  [ 2.4,  2.3,  2.2, 2.1,  2.0, 1.25, 1.23]
 python_min: [3.11, 3.10, 3.10, 3.9,  3.9,  3.8,  3.8]
-
-# numpy-typing-compat version
-ntc_version: 20250730
