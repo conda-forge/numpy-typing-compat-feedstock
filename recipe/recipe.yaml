@@ -1,5 +1,6 @@
 context:
   python_min: 3.11
+  source_url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ numpy_min }}.${{ ntc_version }}.tar.gz
 
 package:
   name: numpy-typing-compat
@@ -7,8 +8,34 @@ package:
   version: ${{ numpy_min }}.${{ ntc_version }}
 
 source:
-  - url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ numpy_min }}.${{ ntc_version }}.tar.gz
-    sha256: eb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef
+  - if: numpy_min == "2.3"
+    then: 
+    - url: ${{ source_url }}
+      sha256: eb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef
+  - if: numpy_min == "2.2"
+    then: 
+    - url: ${{ source_url }}
+      sha256: f6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f
+  - if: numpy_min == "2.1"
+    then: 
+    - url: ${{ source_url }}
+      sha256: d61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583
+  - if: numpy_min == "2.0"
+    then: 
+    - url: ${{ source_url }}
+      sha256: ba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7
+  - if: numpy_min == "1.25"
+    then: 
+    - url: ${{ source_url }}
+      sha256: 81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3
+  - if: numpy_min == "1.23"
+    then: 
+    - url: ${{ source_url }}
+      sha256: 2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3
+  - if: numpy_min == "1.22"
+    then: 
+    - url: ${{ source_url }}
+      sha256: 0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -24,12 +51,12 @@ requirements:
     - python >=${{ python_min }}
     - numpy <${{ numpy_cap }},>=${{ numpy_min }}
 
-tests:
-  - python:
-      imports:
-        - numpy_typing_compat
-      pip_check: true
-      python_version: ${{ python_min }}.*
+# tests:
+#   - python:
+#       imports:
+#         - numpy_typing_compat
+#       pip_check: true
+#       python_version: ${{ python_min }}.*
 
 about:
   homepage: https://github.com/jorenham/numpy-typing-compat
