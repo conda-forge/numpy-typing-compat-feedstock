@@ -1,5 +1,5 @@
 zip_keys:
-- ["numpy_min", "numpy_cap"]
+- [numpy_min, numpy_cap]
 
 numpy_min: [2.3, 2.2, 2.1, 2.0, 1.25, 1.23, 1.22]
 numpy_cap: [2.4, 2.3, 2.2, 2.1,  2.0, 1.25, 1.23]

@@ -8,8 +8,32 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_:
-        CONFIG: linux_64_
+      linux_64_numpy_cap1.23numpy_min1.22:
+        CONFIG: linux_64_numpy_cap1.23numpy_min1.22
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap1.25numpy_min1.23:
+        CONFIG: linux_64_numpy_cap1.25numpy_min1.23
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.0numpy_min1.25:
+        CONFIG: linux_64_numpy_cap2.0numpy_min1.25
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.1numpy_min2.0:
+        CONFIG: linux_64_numpy_cap2.1numpy_min2.0
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.2numpy_min2.1:
+        CONFIG: linux_64_numpy_cap2.2numpy_min2.1
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.3numpy_min2.2:
+        CONFIG: linux_64_numpy_cap2.3numpy_min2.2
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.4numpy_min2.3:
+        CONFIG: linux_64_numpy_cap2.4numpy_min2.3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360
