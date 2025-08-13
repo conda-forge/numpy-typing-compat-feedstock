@@ -1,6 +1,14 @@
 zip_keys:
-- [numpy_min, numpy_cap, python_min]
+- [numpy_min, numpy_cap, python_min, source_hash]
 
 numpy_min:  [ 2.3,  2.2,  2.1,  2.0, 1.25, 1.23, 1.22]
 numpy_cap:  [ 2.4,  2.3,  2.2,  2.1,  2.0, 1.25, 1.23]
 python_min: [3.11, 3.10, 3.10, 3.10, 3.10, 3.10, 3.10]
+source_hash:
+- eb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef
+- f6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f
+- d61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583
+- ba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7
+- 81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3
+- 2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3
+- 0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9
