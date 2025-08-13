@@ -1,18 +1,19 @@
 context:
-  version: 2.3.20250730
-  python_min: 3.11
+  numpy_typing_compat_version: 20250730
+  pkg_version: ${{ numpy_min }}.${{ numpy_typing_compat_version }}
 
 package:
   name: numpy-typing-compat
-  version: ${{ version }}
+  # e.g. '1.22.20250730' for numpy >=1.22,<1.23, numpy-typing-compat version 20250730
+  version: ${{ pkg_version }}
 
 source:
-  - url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ version }}.tar.gz
-    sha256: eb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef
+  - url: https://pypi.org/packages/source/n/numpy-typing-compat/numpy_typing_compat-${{ pkg_version }}.tar.gz
+    sha256: ${{ source_hash }}
 
 build:
   script: ${{ PYTHON }} -m pip install .
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -22,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - numpy <2.4,>=2.3
+    - numpy <${{ numpy_cap }},>=${{ numpy_min }}
 
 tests:
   - python:

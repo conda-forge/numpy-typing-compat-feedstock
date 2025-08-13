@@ -8,8 +8,32 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_:
-        CONFIG: linux_64_
+      ? linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9
+      : CONFIG: linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      ? linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3
+      : CONFIG: linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      ? linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3
+      : CONFIG: linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7:
+        CONFIG: linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583:
+        CONFIG: linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f:
+        CONFIG: linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef:
+        CONFIG: linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360
