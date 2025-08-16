@@ -1,5 +1,5 @@
 context:
-  numpy_typing_compat_version: 20250730
+  numpy_typing_compat_version: 20250814
   pkg_version: ${{ numpy_min }}.${{ numpy_typing_compat_version }}
 
 package:
