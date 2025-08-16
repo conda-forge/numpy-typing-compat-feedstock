@@ -7,13 +7,13 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 numpy_cap:
-- '2.0'
+- '1.23'
 numpy_min:
-- '1.25'
+- '1.22'
 python_min:
-- '3.10'
+- '3.8'
 source_hash:
-- 81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3
+- 6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c
 zip_keys:
 - - numpy_min
   - numpy_cap

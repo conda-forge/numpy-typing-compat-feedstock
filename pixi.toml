@@ -25,48 +25,48 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build numpy-typing-compat-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.23numpy_min1.22python_min3.10source_hash0741447dbbaeb3db069341b53903f16d076fcdef931c0190fb15e5bc004463c9"
-[tasks."build-linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.25numpy_min1.23python_min3.10source_hash2deb6a9b0801e23c0597f3654d667238df581a85115d9f813d12ff0afcc842d3"
-[tasks."build-linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.0numpy_min1.25python_min3.10source_hash81f00561a6f0b92436b4c0b64dc9da25a8a31154a4fb0813e3337b2a0afd7db3"
-[tasks."build-linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.1numpy_min2.0python_min3.10source_hashba6a23a9d07bb782bda4f5852b476de4e16bad8f979c96e3df1d04e6bb6304c7"
-[tasks."build-linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashd61dd84290c6faaa35007346b79741e1e100915885a5a5a63d05b401eddbf583"
-[tasks."build-linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashf6b9a08193c6291c3d6c4717d1ee1b0a8bf5050765165175affde7afaab1639f"
-[tasks."build-linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hasheb30717dc7390a038c2247be1a7e8bf1a48b8a4701a01960804830a231631bef"
+[tasks."build-linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.23numpy_min1.22python_min3.8source_hash6ad36bedd753e90d8fb5c34b635f63bd117b233b2cc95afc045afd2651a0df3c"
+[tasks."build-linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap1.25numpy_min1.23python_min3.8source_hashe2eae3520569ade0c51cea8652565fb80689aca36e4c9aa15a705917ecf805f0"
+[tasks."build-linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.0numpy_min1.25python_min3.9source_hashb470c36d1dfc2acdc323a7ebfc44ac579994b7cbee8b9b2733d3122645a0920f"
+[tasks."build-linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.1numpy_min2.0python_min3.9source_hash8920e5c72fd6924d328cbce224393a7269265187bf84a217d785aa65a3e98933"
+[tasks."build-linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.2numpy_min2.1python_min3.10source_hashfd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f"
+[tasks."build-linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7 directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.3numpy_min2.2python_min3.10source_hashe29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7"
+[tasks."build-linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d.yaml"
+description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d directly (without setup scripts)"
+[tasks."inspect-linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d.yaml"
+description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.4numpy_min2.3python_min3.11source_hash5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
