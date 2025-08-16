@@ -1,9 +1,11 @@
 zip_keys:
 - [numpy_min, numpy_cap, python_min, source_hash]
 
-numpy_min:  [ 2.3,  2.2,  2.1, 2.0, 1.25, 1.23, 1.22]
-numpy_cap:  [ 2.4,  2.3,  2.2, 2.1,  2.0, 1.25, 1.23]
-python_min: [3.11, 3.10, 3.10, 3.9,  3.9,  3.8,  3.8]
+numpy_min:  [ 2.3,  2.2,  2.1,  2.0, 1.25, 1.23, 1.22]
+numpy_cap:  [ 2.4,  2.3,  2.2,  2.1,  2.0, 1.25, 1.23]
+# TODO(@jorenham): https://github.com/jorenham/numpy-typing-compat/issues/44
+# python_min: [3.11, 3.10, 3.10, 3.9,  3.9,  3.8,  3.8]
+python_min: [3.11, 3.10, 3.10, 3.10, 3.10, 3.10, 3.10]
 source_hash:
 - 5b27cda3b05cf95eacb4296443ff9cd640d5adfed59067d4b7cbcfb22898916d  # 2.3
 - e29187c303525274269449ceb8431dfe286b63dd6a00e8a84ba19c98eb3abde7  # 2.2
