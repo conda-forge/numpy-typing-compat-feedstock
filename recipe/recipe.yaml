@@ -1,10 +1,10 @@
 context:
-  numpy_typing_compat_version: 20250814
-  pkg_version: ${{ numpy_min }}.${{ numpy_typing_compat_version }}
+  numpy_typing_compat_version: 20250818
+  pkg_version: ${{ numpy_typing_compat_version }}.${{ numpy_min }}
 
 package:
   name: numpy-typing-compat
-  # e.g. '1.22.20250730' for numpy >=1.22,<1.23, numpy-typing-compat version 20250730
+  # e.g. '20250818.1.22' for numpy >=1.22,<1.23, numpy-typing-compat v20250818
   version: ${{ pkg_version }}
 
 source:
