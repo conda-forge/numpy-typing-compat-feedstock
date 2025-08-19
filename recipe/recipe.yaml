@@ -24,6 +24,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy <${{ numpy_cap }},>=${{ numpy_min }}
+    # needed for python <3.10, not using a selector to enable noarch
+    - typing-extensions >=4
 
 tests:
   - python:
