@@ -13,7 +13,7 @@ numpy_min:
 python_min:
 - '3.10'
 source_hash:
-- fd9c85b69e5ebc912d617097e34bed5c4deb49a8af7f9f6534c9a5918a40d08f
+- 7626eda39e42b513d44285a70e1a9f07f13d3b658cc4d4d83671dc134b232de0
 zip_keys:
 - - numpy_min
   - numpy_cap
