@@ -3,7 +3,7 @@ zip_keys:
 
 numpy_min:  [ 2.3,  2.2,  2.1,  2.0, 1.25, 1.23, 1.22]
 numpy_cap:  [ 2.4,  2.3,  2.2,  2.1,  2.0, 1.25, 1.23]
-python_min: [3.11, 3.10, 3.10,  3.9,  3.9,  3.9,  3.9]  # uv-build requires python>=3.0
+python_min: [3.11, 3.10, 3.10,  3.9,  3.9,  3.9,  3.9]  # uv-build requires python>=3.9
 source_hash:
 - 72e83d535b635d668ba7315e43ae80be1469a6faea6fc96d312516f39b3d8fa5  # 2.3
 - 84f50c86908bf796857180856f1acb7da3c5bf22f461558de1cd225128c028ba  # 2.2
