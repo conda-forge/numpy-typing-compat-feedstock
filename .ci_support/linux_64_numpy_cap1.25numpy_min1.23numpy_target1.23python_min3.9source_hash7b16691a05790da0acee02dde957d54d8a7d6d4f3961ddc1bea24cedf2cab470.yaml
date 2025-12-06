@@ -1,0 +1,22 @@
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+docker_image:
+- quay.io/condaforge/linux-anvil-x86_64:alma9
+numpy_cap:
+- '1.25'
+numpy_min:
+- '1.23'
+numpy_target:
+- '1.23'
+python_min:
+- '3.9'
+source_hash:
+- 7b16691a05790da0acee02dde957d54d8a7d6d4f3961ddc1bea24cedf2cab470
+zip_keys:
+- - numpy_target
+  - numpy_min
+  - numpy_cap
+  - python_min
+  - source_hash

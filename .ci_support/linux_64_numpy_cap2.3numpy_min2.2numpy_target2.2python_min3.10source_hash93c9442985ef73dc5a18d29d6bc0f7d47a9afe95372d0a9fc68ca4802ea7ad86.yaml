@@ -1,5 +1,3 @@
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -7,15 +5,18 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 numpy_cap:
-- '2.2'
+- '2.3'
 numpy_min:
-- '2.1'
+- '2.2'
+numpy_target:
+- '2.2'
 python_min:
 - '3.10'
 source_hash:
-- 7626eda39e42b513d44285a70e1a9f07f13d3b658cc4d4d83671dc134b232de0
+- 93c9442985ef73dc5a18d29d6bc0f7d47a9afe95372d0a9fc68ca4802ea7ad86
 zip_keys:
-- - numpy_min
+- - numpy_target
+  - numpy_min
   - numpy_cap
   - python_min
   - source_hash
