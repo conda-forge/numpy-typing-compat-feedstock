@@ -12,8 +12,6 @@ source:
     sha256: ${{ source_hash }}
 
 build:
-  variant:
-    use_keys: [numpy_target]
   script: ${{ PYTHON }} -m pip install .
   number: 0
   noarch: python
