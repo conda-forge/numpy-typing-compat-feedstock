@@ -1,5 +1,3 @@
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -10,12 +8,15 @@ numpy_cap:
 - '2.1'
 numpy_min:
 - '2.0'
+numpy_target:
+- '2.0'
 python_min:
 - '3.9'
 source_hash:
-- 3f77ba873ec9668e9b7bd15ae083cc16c82aa732b651ed2bf5aa284cdd0dc71d
+- 7db9d5e991af03b2ade38f43253e4eb03ab88925230931bff7f559c020676fb1
 zip_keys:
-- - numpy_min
+- - numpy_target
+  - numpy_min
   - numpy_cap
   - python_min
   - source_hash

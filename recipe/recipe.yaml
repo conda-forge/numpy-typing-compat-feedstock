@@ -1,6 +1,6 @@
 context:
-  numpy_typing_compat_version: 20250818
-  pkg_version: ${{ numpy_typing_compat_version }}.${{ numpy_min }}
+  numpy_typing_compat_version: 20251206
+  pkg_version: ${{ numpy_typing_compat_version }}.${{ numpy_target }}
 
 package:
   name: numpy-typing-compat
