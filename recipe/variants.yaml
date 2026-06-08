@@ -1,5 +1,5 @@
 zip_keys:
-- [numpy_target, numpy_min, numpy_cap, python_min, source_hash]
+- [numpy_target, numpy_min, numpy_cap, python_min, source_hash, channel_sources]
 
 numpy_target: [2.5,      2.4,  2.3,  2.2,  2.1,  2.0]
 numpy_min:    [2.5.0rc1, 2.4,  2.3,  2.2,  2.1,  2.0]
