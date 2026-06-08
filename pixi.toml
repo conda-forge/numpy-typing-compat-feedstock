@@ -53,12 +53,6 @@ description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_c
 [tasks."inspect-linux_64_numpy_cap2.5numpy_min2.4numpy_target2.4python_min3.11source_hashe4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.5numpy_min2.4numpy_target2.4python_min3.11source_hashe4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c.yaml"
 description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.5numpy_min2.4numpy_target2.4python_min3.11source_hashe4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c"
-[tasks."build-linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9.yaml"
-description = "Build numpy-typing-compat-feedstock with variant linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9 directly (without setup scripts)"
-[tasks."inspect-linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9.yaml"
-description = "List contents of numpy-typing-compat-feedstock packages built for variant linux_64_numpy_cap2.6numpy_min2.5.0rc1numpy_target2.5python_min3.12source_hash1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
