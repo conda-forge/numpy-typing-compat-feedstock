@@ -12,3 +12,7 @@ source_hash:
 - 0e9818063b3a694e72f872d31af6c180a73bcbfb4efdaf927e3f6b74e09b1701  # 2.2
 - ffe2859c5c8ad0f2d6e7e6ac14f03ef4eb2c1d77372fae3a6992b7606b6fdcc6  # 2.1
 - eeda5829c77b8aa7be0a9013418019248453aeda33331b46899287d578effdf4  # 2.0
+
+# TODO: remove once numpy 2.5.0 final is available
+channel_sources:
+- conda-forge/label/numpy_rc,conda-forge
