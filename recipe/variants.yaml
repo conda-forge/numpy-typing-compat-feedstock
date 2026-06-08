@@ -13,6 +13,11 @@ source_hash:
 - ffe2859c5c8ad0f2d6e7e6ac14f03ef4eb2c1d77372fae3a6992b7606b6fdcc6  # 2.1
 - eeda5829c77b8aa7be0a9013418019248453aeda33331b46899287d578effdf4  # 2.0
 
-# TODO: remove once numpy 2.5.0 final is available
+# TODO: drop the numpy_rc label once numpy 2.5.0 final is available
 channel_sources:
-- conda-forge/label/numpy_rc,conda-forge
+- conda-forge/label/numpy_rc,conda-forge  # 2.5 (needs the rc and its _numpy_rc gate)
+- conda-forge                             # 2.4
+- conda-forge                             # 2.3
+- conda-forge                             # 2.2
+- conda-forge                             # 2.1
+- conda-forge                             # 2.0
