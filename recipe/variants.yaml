@@ -1,16 +1,27 @@
 zip_keys:
 - [numpy_target, numpy_min, numpy_cap, python_min, source_hash]
 
-numpy_target: [ 2.4,       2.3,  2.2,  2.1,  2.0, 1.25, 1.23, 1.22]
-numpy_min:    [ 2.4.0rc1,  2.3,  2.2,  2.1,  2.0, 1.25, 1.23, 1.22]
-numpy_cap:    [ 2.5,       2.4,  2.3,  2.2,  2.1,  2.0, 1.25, 1.23]
-python_min:   [3.11,      3.11, 3.10, 3.10,  3.9,  3.9,  3.9,  3.9]  # uv-build requires python>=3.9
+numpy_target: [2.4,  2.3,  2.2,  2.1,  2.0]
+numpy_min:    [2.4,  2.3,  2.2,  2.1,  2.0]
+numpy_cap:    [2.5,  2.4,  2.3,  2.2,  2.1]
+python_min:   [3.11, 3.11, 3.10, 3.10, 3.10]
 source_hash:
-- 59882d23aaff054a2536da80564012cdce33487657be4d79c5925bb8705fcabc  # 2.4
-- 18e00e0f4f2040fe98574890248848c7c6831a975562794da186cf4f3c90b935  # 2.3
-- 93c9442985ef73dc5a18d29d6bc0f7d47a9afe95372d0a9fc68ca4802ea7ad86  # 2.2
-- 8a868da29e8d076c2aaef8ea9ebb602af917c9752063cfe7c95d6cb60c7b9ea3  # 2.1
-- 7db9d5e991af03b2ade38f43253e4eb03ab88925230931bff7f559c020676fb1  # 2.0
-- 27ff188fe70102312ea5e8553423897a4f3365eee15aa2a7ee1fcf6efc6fed12  # 1.25
-- 7b16691a05790da0acee02dde957d54d8a7d6d4f3961ddc1bea24cedf2cab470  # 1.23
-- 080cadfdc00458ecb50ab467d602f2ae8ee17fbb172c2c651ddfd367976856e7  # 1.22
+- e4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c  # 2.4
+- f06c8aaca9fa6a9047a7aba5474a7e33870b954544ff276de000dad68c640fbf  # 2.3
+- 0e9818063b3a694e72f872d31af6c180a73bcbfb4efdaf927e3f6b74e09b1701  # 2.2
+- ffe2859c5c8ad0f2d6e7e6ac14f03ef4eb2c1d77372fae3a6992b7606b6fdcc6  # 2.1
+- eeda5829c77b8aa7be0a9013418019248453aeda33331b46899287d578effdf4  # 2.0
+
+# TODO: add 2.5 once we numpy 2.5.0 final is available
+
+# numpy_target: [2.5,  2.4,  2.3,  2.2,  2.1,  2.0]
+# numpy_min:    [2.5,  2.4,  2.3,  2.2,  2.1,  2.0]
+# numpy_cap:    [2.6,  2.5,  2.4,  2.3,  2.2,  2.1]
+# python_min:   [3.12, 3.11, 3.11, 3.10, 3.10, 3.10]
+# source_hash:
+# - 1885a678e9a24564839ed5d1711c0031735fb7de7f0b5ed88d550e5d45a8d4f9  # 2.5
+# - e4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c  # 2.4
+# - f06c8aaca9fa6a9047a7aba5474a7e33870b954544ff276de000dad68c640fbf  # 2.3
+# - 0e9818063b3a694e72f872d31af6c180a73bcbfb4efdaf927e3f6b74e09b1701  # 2.2
+# - ffe2859c5c8ad0f2d6e7e6ac14f03ef4eb2c1d77372fae3a6992b7606b6fdcc6  # 2.1
+# - eeda5829c77b8aa7be0a9013418019248453aeda33331b46899287d578effdf4  # 2.0

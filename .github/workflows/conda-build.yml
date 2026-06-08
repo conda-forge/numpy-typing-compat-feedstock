@@ -1,15 +1,156 @@
-# This file was added automatically by admin-migrations. Do not modify.
-# It ensures that Github Actions can run once rerendered for the first time.
+# This file was generated automatically from conda-smithy. To update this configuration,
+# update the conda-forge.yml and/or the recipe/meta.yaml.
 # -*- mode: yaml -*-
 
 name: Build conda package
 on:
-  workflow_dispatch:
+  push:
+
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
 
 jobs:
   build:
-    name: Disabled build
-    runs-on: ubuntu-slim
-    if: false
+    name: ${{ matrix.CONFIG }}
+    runs-on: ${{ matrix.runs_on }}
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - CONFIG: linux_64_numpy_cap2.1numpy_min2.0numpy_target2.0python_min3.10source_hasheeda5829c77b8aa7be0a9013418019248453aeda33331b46899287d578effdf4
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_numpy_cap2.2numpy_min2.1numpy_target2.1python_min3.10source_hashffe2859c5c8ad0f2d6e7e6ac14f03ef4eb2c1d77372fae3a6992b7606b6fdcc6
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_numpy_cap2.3numpy_min2.2numpy_target2.2python_min3.10source_hash0e9818063b3a694e72f872d31af6c180a73bcbfb4efdaf927e3f6b74e09b1701
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_numpy_cap2.4numpy_min2.3numpy_target2.3python_min3.11source_hashf06c8aaca9fa6a9047a7aba5474a7e33870b954544ff276de000dad68c640fbf
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_numpy_cap2.5numpy_min2.4numpy_target2.4python_min3.11source_hashe4eb661f312a7ad5805677967d5879e04fd7b97627fe910121ce7b1f43aa748c
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
     steps:
-    - run: exit 0
+
+    - name: Checkout code
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+    - name: Build on Linux
+      id: build-linux
+      if: matrix.os == 'ubuntu'
+      env:
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
+        CONFIG: ${{ matrix.CONFIG }}
+        UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
+        DOCKER_IMAGE: ${{ matrix.DOCKER_IMAGE }}
+        CI: github_actions
+        CONDA_FORGE_DOCKER_RUN_ARGS: "${{ matrix.docker_run_args }}"
+        BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
+        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
+        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
+      shell: bash
+      run: |
+        if [[ "$(uname -m)" == "x86_64" ]]; then
+          echo "::group::Configure binfmt_misc"
+          docker run --rm --privileged multiarch/qemu-user-static:register --reset --credential yes
+        fi
+        export flow_run_id="github_$GITHUB_RUN_ID"
+        export remote_url="https://github.com/$GITHUB_REPOSITORY"
+        export sha="$GITHUB_SHA"
+        export FEEDSTOCK_NAME="$(basename $GITHUB_REPOSITORY)"
+        export GIT_BRANCH="$(basename $GITHUB_REF)"
+        if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+          export IS_PR_BUILD="True"
+        else
+          export IS_PR_BUILD="False"
+        fi
+        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
+        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
+        echo "::endgroup::"
+        ./.scripts/run_docker_build.sh
+
+    - name: Build on macOS
+      id: build-macos
+      if: matrix.os == 'macos'
+      env:
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
+        CONFIG: ${{ matrix.CONFIG }}
+        UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
+        CI: github_actions
+        BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
+        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
+        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
+      shell: bash
+      run: |
+        export flow_run_id="github_$GITHUB_RUN_ID"
+        export remote_url="https://github.com/$GITHUB_REPOSITORY"
+        export sha="$GITHUB_SHA"
+        export FEEDSTOCK_NAME="$(basename $GITHUB_REPOSITORY)"
+        export GIT_BRANCH="$(basename $GITHUB_REF)"
+        if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+          export IS_PR_BUILD="True"
+        else
+          export IS_PR_BUILD="False"
+        fi
+        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
+        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
+        ./.scripts/run_osx_build.sh
+
+    - name: Build on windows
+      id: build-windows
+      if: matrix.os == 'windows'
+      shell: cmd
+      run: |
+        set "flow_run_id=github_%GITHUB_RUN_ID%"
+        set "remote_url=https://github.com/%GITHUB_REPOSITORY%"
+        set "sha=%GITHUB_SHA%"
+        call ".scripts\run_win_build.bat"
+      env:
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
+        PYTHONUNBUFFERED: 1
+        CONFIG: ${{ matrix.CONFIG }}
+        CI: github_actions
+        UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
+        BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
+        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
+        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}

@@ -1,10 +1,10 @@
 context:
-  numpy_typing_compat_version: 20251206
+  numpy_typing_compat_version: 20260602
   pkg_version: ${{ numpy_typing_compat_version }}.${{ numpy_target }}
 
 package:
   name: numpy-typing-compat
-  # e.g. '20250818.1.22' for numpy >=1.22,<1.23, numpy-typing-compat v20250818
+  # e.g. '20260602.2.1' for numpy >=2.1,<2.2
   version: ${{ pkg_version }}
 
 source:
@@ -24,8 +24,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy <${{ numpy_cap }},>=${{ numpy_min }}
-    # needed for python <3.10, not using a selector to enable noarch
-    - typing-extensions >=4
 
 tests:
   - python:
